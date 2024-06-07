@@ -1,0 +1,75 @@
+.form {
+    background: white;
+    display: grid;
+    grid-gap: 20px;
+    border: none;
+    box-shadow: 0px -1px 20px 12px rgb(0 0 0 / 65%);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.form__labelText {
+    margin: 5px 0;
+}
+
+.form__textArea {
+    border: 2px solid #f7f0f0;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.form__textArea:required {
+    border-color: rgb(177, 138, 138);
+
+}
+
+.form__name {
+    color: #92263d;
+    font-size: 25px;
+    text-align: center;
+}
+
+.form__textArea--otherColor {
+    background-color: #d18793;
+    color: white;
+}
+
+.form__labelBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    grid-gap: 20px;
+}
+
+.form__labelBox--twoColumns {
+    grid-template-columns: auto 64%;
+}
+
+.form__labelBox--expandedBox {
+    grid-template-columns: 1fr;
+}
+
+.form__button {
+    border: none;
+    background: #7a3947;
+    color: rgb(224, 210, 210);
+    padding: 12px;
+    border-radius: 15px;
+    transition: 0.4s;
+}
+
+.form__button:hover {
+    transform: scale(1.010);
+    background: hsl(356, 23%, 53%);
+}
+
+.form__button:active {
+    transform: scale(1);
+    transition: 0.09s ease;
+    background: hsl(0, 57%, 43%);
+}
+
+@media (max-width: 767px) {
+    .form__labelBox {
+        grid-template-columns: 1fr;
+    }
+}

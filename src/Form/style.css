@@ -1,0 +1,23 @@
+.html {
+    box-sizing: border-box;
+  }
+  
+  *, ::after, ::before {
+    box-sizing: inherit;
+  }
+  
+  body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    min-height: 100vh;
+    display: grid;
+    align-items: center;
+    grid-template-rows: 1fr;
+  }
+  
+  .form__button {
+    cursor: pointer;
+  }
+  
+  .form__textArea--otherColor {
+    cursor: pointer;
+  }
